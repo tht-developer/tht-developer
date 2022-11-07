@@ -1,4 +1,8 @@
-### Hi there 👋
+### Hi there, I am Tobin 👋
+
+🔭 I’m currently working on learning and finding a path to a new career!
+
+
 
 <!--
 **tht-developer/tht-developer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
