@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial, monospace;
+    }
+    body{
+    background-color: #1E4E68;
+    }
+    #main{
+    max-width: 100%;
+    height: auto;
+    }
+    #header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    }
+    #navbar{
+    list-style: none;
+    background-color: #0B1C2C;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    #welcome-section{
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    background-color: #3771c8ff;
+    }
+    
+    .myHandle {
+        color: yellow;
+        font-size: 24px;
+    }
+    
+    .pleased {
+        display: flex;
+        color: grey;
+        font-size: 24px;
+    }
+        
+    #projects{
+    padding: 10em 0em;
+    background-color: #1A4259;
+    text-align: center;
+    }
+    
+    #projects-grid{
+    display: grid;
+    margin: 0em 5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 2em;
+    
+    }
+    #projects {
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: white;
+    }
+ 
+  
+    
+    #collaboration{
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    background-color: #15354A;
+    }
+
+    #collaboration-links{
+    margin: 2em 0em ;
+    }
+
+    #collaboration-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+    #collaboration-links {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    }
+
+    #collaboration-links {
+    transition: all 0.125s ease-in-out;
+    }
+
+    #collaboration-links:hover{
+    transform: translateY(10px);
+    }
+        
+    #footer{
+    background-color: #0B1C2C;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+    #footer div{
+    margin: 1em;
+    }
+    
+    #footer div {
+    color: white;
+    }
+    
+    
+    @media (max-width: 575.98px){
+    #projects-grid{
+    margin: 0em 2em;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (4, 1fr);
+    column-gap: 1em;
+    row-gap: 2em;
+    max-width: 100%;
+    }
+    #projects-grid .project-tile{
+    color: #0B1C2C;
+    }
+    }
+    
+    #navbar .js-nav-progressbar{
+    position: relative;
+    }
+    .nav-progressbar {
+    height: 20px;
+    background-image: linear-gradient(to right, rgb(13, 28, 52), rgb(74, 99, 139), #3771c8ff);
+    width: 0;
+    }
