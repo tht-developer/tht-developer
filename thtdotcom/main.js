@@ -1,6 +1,6 @@
 
-const navProgressBar = document.querySelector("");
-const navProgressBar2 = document.querySelector("");
+const navProgressBar = document.querySelector("#navProgressBar");
+//const navProgressBar2 = document.querySelector("");
 let heightLimit;
 
 
@@ -8,7 +8,7 @@ let heightLimit;
 window.addEventListener("scroll", event => {
 
 const curPos = window.scrollY;
-const curPercentage = Math.round( curPos / heightLimit * 100) ;
+const curPercentage = Math.round( curPos / heightLimit * 70) ;
 
 navProgressBar.style.width = curPercentage + "%";
 })
