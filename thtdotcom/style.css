@@ -1,7 +1,7 @@
 /*rgb(76, 126, 187)*/
 
 html {
-    background-image: url("images/coding_background.jpg");
+    background-image: url("images/background_3.jpg");
     color: rgb(7, 38, 44);
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,7 +16,8 @@ html {
 }
 
 title {
-    height: 60px;
+    height: 3.5rem;
+    visibility: hidden;
 }
 
 body {
@@ -33,7 +34,7 @@ body {
     align-items: right;
     max-width: fit-content;
     height: fit-content;
-    background-color: rgb(14, 82, 96);
+    background-color: transparent;
     z-index: -2;
     
 }
@@ -45,6 +46,13 @@ body {
     align-items: center;
     background-color: rgb(49, 117, 143);
     width: 100%;
+    }
+
+#header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .navList {
@@ -107,7 +115,7 @@ body {
 
 #navProgressBar {
     position: relative;
-    background-image: linear-gradient(to left, rgb(233, 11, 11), white);
+    background-image: linear-gradient(to left, rgb(34, 78, 95), white);
     height: 8px;
     max-width: 994px;
     border: solid;
@@ -124,7 +132,7 @@ body {
     width: 100%;
     min-height: 250px;
     height: fit-content;
-    background-image: url(images/background.jpg);
+    background-color: transparent;
     
 }
 
@@ -138,7 +146,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     max-width: 100%;
@@ -224,15 +232,22 @@ background-color: rgb(36, 58, 84);
     text-shadow: 2px 2px 4px black;
 }
 
-.projects-text {
+.projects-text, .projects-text2 {
     color: white;
     font-size: 20px;
     font-weight: bold;
     font-style: italic;
     text-align: left;
     padding-left: 45px;
-    margin-bottom: 0;
+    margin-bottom: auto;
     flex-wrap: wrap;
+}
+
+.projects-text2 {
+    color: rgb(197, 199, 90);
+    text-align: right;
+    padding-right: 45px;
+    margin-top: 5px;
 }
 
 .project-link-text {
@@ -258,11 +273,12 @@ background-color: rgb(36, 58, 84);
 
 .learning-text {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(49, 117, 143);
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+    color: grey;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 1rem;
     text-align: center;
 }
 
@@ -372,9 +388,9 @@ h5 {
 }
 
 .collab-text p {
-    color: rgb(197, 199, 90);
-    font-size: 36px;
-    font-family: 'Permanent Marker', cursive;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
     margin-right: 30px;
     text-shadow: 4px 4px 4px black;
     padding-left: 30px;
@@ -406,6 +422,7 @@ footer {
     background-color: rgb(36, 58, 84);
     height: fit-content;
     width: 100%;
+    margin-bottom: 3.5rem;
 }    
 
 .copywright, .copy {
@@ -416,9 +433,13 @@ footer {
     align-items: center;
 }
 
+.copywright {
+    margin-bottom: 3.5rem;
+}
+
 .bottomSpacer {
-    height: 8px;
-    
+    height: 3.5rem;
+    visibility: hidden;
 }
 
 .footer-box, .footer-text {
@@ -427,16 +448,16 @@ footer {
     font-weight: bold;
     justify-content: center;
     align-items: center;
-}
+} 
 
 .upButton img {
     max-width: 35px;
-    padding-right: 8px;
+    padding-right: AUTO;
 }
 .upButton {
     flex-direction: row;
-    color: white;
-    font-size: 14px;
+    color: rgb(49, 117, 143);
+    font-size: 1rem;
     font-weight: bold;
     align-items: center;
     justify-content: center;
@@ -468,6 +489,7 @@ footer {
     border-radius: 6px;
     position: absolute;
     z-index: 1;
+    right: -1.1rem;
   }
   
 .toolTip:hover .toolTipHtml,
